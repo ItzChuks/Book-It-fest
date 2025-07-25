@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Animation Example</title>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #BA2F2B;
+      color: white;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background: white;
+      margin: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .content {
+      flex: 1 1 300px;
+      padding: 1rem;
+    }
+    .content h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #333;
+    }
+    .content p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+    .image {
+      flex: 1 1 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    @media(max-width: 768px) {
+      section {
+        flex-direction: column;
+      }
+      .image, .content {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Awesome Website</h1>
+    <p>Scroll down to see animations</p>
+  </header>
+
+  <section>
+    <div class="content" data-aos="fade-right">
+      <h2>Engaging Content</h2>
+      <p>
+        This section smoothly fades in from the right when you scroll to it. You can use AOS to add beautiful scroll animations to any part of your website without writing custom JavaScript.
+      </p>
+    </div>
+    <div class="image" data-aos="fade-left">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-down">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <section>
+    <div class="content" data-aos="fade-up">
+      <h2>More Animations</h2>
+      <p>
+        You can combine different animation effects, set delays, and control durations. AOS is lightweight, easy to use, and works great on all modern browsers.
+      </p>
+    </div>
+    <div class="image" data-aos="zoom-in">
+      <img src="https://via.placeholder.com/400x300" alt="Example Image">
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration
+      once: true      // animation happens only once
+    });
+  </script>
+</body>
+</html>
